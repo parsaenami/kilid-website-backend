@@ -1,0 +1,28 @@
+Comment
+---
+tags:
+  - Property
+
+consumes:
+  - multipart/form-data
+
+parameters:
+  - name: property_id
+    in: formData
+    required: true
+    type: integer
+
+  - name: comment
+    in: formData
+    required: false
+    type: string
+
+responses:
+  500:
+    description: Error occurred somewhere!
+
+  200:
+    description: Ok
+
+  401:
+    description: Duplicate user

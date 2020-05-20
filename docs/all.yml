@@ -1,0 +1,11 @@
+All users
+---
+tags:
+  - User
+
+responses:
+  500:
+    description: Error occurred somewhere!
+
+  200:
+    description: Ok

@@ -1,0 +1,28 @@
+User's properties
+---
+tags:
+  - User
+
+consumes:
+  - multipart/form-data
+
+parameters:
+  - name: user_id
+    in: path
+    required: true
+    type: string
+
+  - name: bookmark
+    in: query
+    required: false
+    type: integer
+
+responses:
+  500:
+    description: Error occurred somewhere!
+
+  200:
+    description: Ok
+
+  401:
+    description: Duplicate user

@@ -1,0 +1,23 @@
+Logout
+---
+tags:
+  - Auth
+
+consumes:
+  - multipart/form-data
+
+parameters:
+  - name: user_id
+    in: formData
+    required: true
+    type: integer
+
+responses:
+  500:
+    description: Error occurred somewhere!
+
+  200:
+    description: Ok
+
+  401:
+    description: Duplicate user

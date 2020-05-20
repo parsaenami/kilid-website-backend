@@ -1,0 +1,45 @@
+User functions (edit, delete, get info)
+---
+tags:
+  - User
+
+consumes:
+  - multipart/form-data
+
+parameters:
+  - name: user_id
+    in: path
+    required: true
+    type: integer
+
+  - name: firstname
+    in: formData
+    required: false
+    type: string
+
+  - name: lastname
+    in: formData
+    required: false
+    type: string
+
+  - name: email
+    in: formData
+    required: false
+    type: string
+
+  - name: phone
+    in: formData
+    required: false
+    type: string
+
+  - name: password
+    in: formData
+    required: false
+    type: string
+
+responses:
+  500:
+    description: Error occurred somewhere!
+
+  200:
+    description: Ok

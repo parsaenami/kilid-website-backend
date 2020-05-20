@@ -1,0 +1,71 @@
+Add a property
+---
+tags:
+  - Property
+
+consumes:
+  - multipart/form-data
+
+parameters:
+  - name: user_id
+    in: formData
+    required: false
+    type: integer
+
+  - name: title
+    in: formData
+    required: false
+    type: string
+
+  - name: type
+    in: formData
+    required: false
+    type: string
+
+  - name: price
+    in: formData
+    required: false
+    type: integer
+
+  - name: area
+    in: formData
+    required: false
+    type: integer
+
+  - name: bedroom
+    in: formData
+    required: false
+    type: integer
+
+  - name: parking
+    in: formData
+    required: false
+    type: integer
+
+  - name: locality
+    in: formData
+    required: false
+    type: string
+
+  - name: lat
+    in: formData
+    type: string
+
+  - name: long
+    in: formData
+    type: string
+
+  - name: pic
+    in: formData
+    required: false
+    type: file
+
+responses:
+  500:
+    description: Error occurred somewhere!
+
+  200:
+    description: Ok
+
+  401:
+    description: Duplicate

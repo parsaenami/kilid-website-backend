@@ -1,0 +1,28 @@
+Login
+---
+tags:
+  - Auth
+
+consumes:
+  - multipart/form-data
+
+parameters:
+  - name: email_phone
+    in: formData
+    required: true
+    type: string
+
+  - name: password
+    in: formData
+    required: true
+    type: string
+
+responses:
+  500:
+    description: Error occurred somewhere!
+
+  200:
+    description: Ok
+
+  401:
+    description: Duplicate user

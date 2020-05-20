@@ -1,0 +1,63 @@
+Property functions (edit, delete, get info)
+---
+tags:
+  - Property
+
+consumes:
+  - multipart/form-data
+
+parameters:
+  - name: property_id
+    in: path
+    required: true
+    type: integer
+
+  - name: title
+    in: formData
+    type: string
+
+  - name: type
+    in: formData
+    type: string
+
+  - name: price
+    in: formData
+    type: integer
+
+  - name: area
+    in: formData
+    type: integer
+
+  - name: bedroom
+    in: formData
+    type: integer
+
+  - name: parking
+    in: formData
+    type: integer
+
+  - name: locality
+    in: formData
+    type: string
+
+  - name: lat
+    in: formData
+    type: string
+
+  - name: long
+    in: formData
+    type: string
+
+  - name: pic
+    in: formData
+    type: file
+
+responses:
+  500:
+    description: Error occurred somewhere!
+
+  200:
+    description: Ok
+
+  401:
+    description: Duplicate

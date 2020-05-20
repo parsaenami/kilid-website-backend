@@ -1,0 +1,25 @@
+Bookmark a property
+---
+tags:
+  - Property
+
+consumes:
+  - multipart/form-data
+
+parameters:
+  - name: user_id
+    in: formData
+    required: true
+    type: integer
+
+  - name: property_id
+    in: formData
+    required: true
+    type: integer
+
+responses:
+  500:
+    description: Error occurred somewhere!
+
+  200:
+    description: Ok

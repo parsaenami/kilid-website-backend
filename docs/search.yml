@@ -1,0 +1,38 @@
+Search
+---
+tags:
+  - Property
+
+consumes:
+  - multipart/form-data
+
+parameters:
+  - name: locality
+    in: query
+    type: string
+
+  - name: price_start
+    in: query
+    type: integer
+
+  - name: area_start
+    in: query
+    type: integer
+
+  - name: price_end
+    in: query
+    type: integer
+
+  - name: area_end
+    in: query
+    type: integer
+
+responses:
+  500:
+    description: Error occurred somewhere!
+
+  200:
+    description: Ok
+
+  401:
+    description: Duplicate
