@@ -61,7 +61,7 @@ pyrsistent==0.15.7
 python-dateutil==2.8.1
 python-editor==1.0.4
 pytz==2019.3
-PyYAML==5.3
+PyYAML==5.4
 redis==3.3.11
 requests==2.22.0
 six==1.13.0
