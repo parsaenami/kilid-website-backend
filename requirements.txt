@@ -46,7 +46,7 @@ MarkupSafe==1.1.1
 matplotlib==3.1.2
 mistune==0.8.4
 numpy==1.18.1
-opencv-python==4.1.2.30
+opencv-python==4.2.0.32
 parso==0.5.2
 pickleshare==0.7.5
 Pillow==7.0.0
